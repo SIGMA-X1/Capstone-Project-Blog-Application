@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <%-include("partials/header.ejs") %>
+    <hr class="">
+    <section class="create section">
+    <form action="/submit" method="POST">
+        <div class="textgap">
+        <label for="blogname">BLOG-NAME</label>
+        <input class="blognameinput" type="text" name="blogname" placeholder="">
+        </div>
+        <div class="textgap">
+            <label for="id">ID</label>
+            <input class="idinput" type="number" name="id" placeholder="Enter your BLOG-ID">
+
+        </div>
+        <div class="textgap">
+        <label for="name">name</label>
+        <input class="nameinput" type="text" name="AuthorName" placeholder="">
+        </div>
+        <div class="textgap">
+        <textarea class="bloginput" id="postContent" name="content" rows="14" cols="70" placeholder="Enter your post content here..."></textarea>
+        </div>
+        <button class="crbtn btn" type="submit">DONE</button>
+      </form>
+</section>
+<%-include("partials/footer.ejs") %>
+
+    
+</body>
+</html>

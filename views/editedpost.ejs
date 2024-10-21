@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <%-include("partials/header.ejs") %> 
+    <section class="editedd section">
+    <%if(post){%>
+        
+    <div>
+        <h1><h1><%= post.Name %></h1>
+        <h4><%= post.AuthorName %></h4>
+        <p><%= post.content %></p></h1>
+
+    </div>
+
+<%}%>
+</section>
+<%-include("partials/footer.ejs") %>
+
+</body>
+</html>

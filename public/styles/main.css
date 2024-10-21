@@ -1,0 +1,321 @@
+*{
+    margin: 0px;
+    padding:0px;
+
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-self:center;
+    position: sticky;
+    z-index:999;
+    background-color: rgb(255, 255, 255);
+    padding: 0px 60px;
+    top: 0;
+    left: 0;
+
+}
+.btn{
+    font-weight: 400;
+    background-color: rgb(204 196 232);
+    padding: 4px 26px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.btn:hover{
+    background-color: rgb(169, 152, 225);
+    color: black;
+}
+hr{
+    margin: 0px 24px;
+}
+div ul{
+    padding-top: 20px;
+}
+.ulnav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.ulnav li{
+    list-style: none;
+    padding-left: 47px;
+
+}
+.img img{
+    height: 70px;
+}
+.section-p{
+    padding: 0px 60px;
+    
+}
+.section{
+    width: 88%;
+    padding: 0px 60px;
+    margin: auto;
+
+}
+.headContent{
+    background-color: yellow;
+    height: 402px;
+    width: 88%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: azure;
+    margin: auto;
+    margin-top: 10px;
+}
+.ulnav li a{
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 1px 6px;
+    text-decoration: none;
+    color: black;
+}
+.ulnav li a:hover{
+    background-color: rgb(222, 185, 212);
+    transition: 0.1s ease;
+}
+
+.hcontent{
+    width: 62%;
+}
+.imgcontent img{
+    height: 299px;
+    width: 309px;
+    border: solid 5px black;
+    border-radius: 158px;
+}
+.imgcontent{
+    width: 30%;
+    margin-left: 52px; 
+}
+.hcontent h1{
+    font-size: 44px;
+}
+.hcontent p{
+    font-size: 16px;
+
+}
+.createbtn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.createbtn button a{
+    text-decoration: none;
+    color: black;
+}
+.createbtn button:hover{
+    background-color: rgb(169, 152, 225);
+    color: black;
+
+}
+.blog-section{
+    background-color: rgb(236 233 237);
+    padding-top: 20px;
+    margin-top: 10px;
+}
+.blog-img{
+    width: 467px;
+    border: 2px solid black;
+    border-radius: 11px;
+    box-shadow: 0px 5px 9px rgb(0, 0, 0,0.6);
+    transition: 0.1s ease-in;
+}
+.blog-img:hover{
+    box-shadow: 0px 5px 15px rgb(0, 0, 0,0.8);
+}
+.bloggg{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 68px;
+    padding-bottom: 9px;
+
+}
+.bloggg h1{
+    font-size:36px;
+    margin-top: 5px;
+}
+.bloggg h4{
+    font-size: 14px;
+    font-weight: 100;
+}
+.bloggg p{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.bloggg .buttons{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    margin-top: 21px;
+}
+footer{
+    background-color: rgb(121 88 112);
+    width: 100%;
+    margin-top: 10px;
+}
+.footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.footcontent{
+    width: 60%;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+.footdetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.footdetails h3{
+    font-size: 20px;
+}
+.footdetails li{
+    list-style: none;
+    font-size: 16px;
+}
+.footer hr{
+    color: beige;
+    margin-top: 26px;
+}
+.footer .copyrights{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.footer p{
+    font-size: 16px;
+    color: white;
+
+}
+.edit{
+    background-color: beige;
+
+}
+.edit input{
+    font-size: 16px;
+}
+.edit textarea{
+    font-size: 16px;
+}
+.create{
+    margin-top: 10px;
+    height: 60vh;
+    background-color: rgb(231, 208, 181);
+    padding-top: 20px;
+}
+.create .textgap{
+margin-top: 10px;
+}
+.create .blognameinput{
+
+    margin-left:8px;
+    font-weight: 600;
+
+}
+
+
+.create .idinput{
+    margin-left:85px;
+    font-weight: 600;
+}
+.create .nameinput{
+    margin-left: 67px;
+    font-weight: 600;
+
+
+}
+.create .bloginput{
+
+  
+
+}
+.create .createbtn a{
+    text-decoration: none;
+    color: black;
+
+}
+.create .createbtn :hover{
+    background-color: rgb(169, 152, 225);
+    color: black;
+
+}
+.edit{
+    height: 58vh;
+    margin-top:10px;
+
+}
+.About{
+    background-color: aliceblue;
+    height: 57vh;
+    margin-top: 10px;
+    padding-top: 13px;
+}
+.About h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+.About p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 11px;
+}
+.contact{
+    margin-top: 10px;
+    padding-top: 20px;
+    background-color: antiquewhite;
+    position: relative;
+    height: 50vh;
+}
+.contact .name{
+    display: flex;
+    width: 40%;
+}
+.contact .email{
+    display: flex;
+    width: 40%;
+}
+.contact .number{
+    display: flex;
+    width: 40%;
+}
+.contact .socials{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 19px;
+    left: 593px;
+}
+.socials svg{
+    margin-right: 15px;
+}
+.editedd{
+    height: 55vh;
+    background-color: antiquewhite;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+.editedd h4{
+    margin-top: 5px;
+    
+    
+}
+.editedd p{
+    margin-top: 10px;
+    
+    
+}
+
+
+
+
+
+

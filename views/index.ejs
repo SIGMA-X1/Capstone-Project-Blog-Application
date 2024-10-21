@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <%-include("partials/header.ejs") %>
+    <hr class="">
+    <section class="headContent section-p">
+        <div class="hcontent">
+        
+        <h1>Heaven for Bloggers</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus molestias obcaecati necessitatibus cupiditate mollitia recusandae natus inventore ea saepe porro placeat minima nemo, magnam minus culpa omnis blanditiis ducimus? Omnis!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, eos nesciunt tempore pariatur aperiam est,impedit odit harum et Porro praesentium eligendi nesciunt ipsum fugim Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat beat</p>
+    </div>
+    <div class="imgcontent">
+        <img src="/images/content.jpg" alt="">
+    </div>
+     </section>
+   
+    
+    <section class="blog-section section">
+        <div class="createbtn">
+            <button class="btn"><a href="/create">Create</a></button>
+        </div>
+        <div class="bloggg">
+            <img class="blog-img" src="images/tech1.jpg" alt="">
+            <h1>Artificial Intelligence: The New Frontier</h1>
+            <h4>-Edwards Hawkins</h4>
+            <p>Artificial Intelligence (AI) is no longer just a buzzword; it’s a reality that’s already making a significant impact across industries. AI is revolutionizing everything from healthcare, where it assists in diagnosing diseases, to finance, where algorithms make trading decisions in milliseconds. In the coming years, AI is expected to become even more integrated into our lives, with advancements in machine learning, natural language processing, and robotics driving innovation. However, as AI becomes more powerful, it also raises ethical questions about privacy, job displacement, and decision-making processes.
+
+            </p>
+       </div>
+       <div class="bloggg">
+        <img class="blog-img" src="images/tech2.jpg" alt="">
+        <h1>The Rise of Quantum Computing</h1>
+        <h4>-Christopher Steward</h4>
+          <p>Quantum computing is another exciting frontier in technology. Unlike traditional computers that use bits, quantum computers use qubits, allowing them to perform complex calculations at speeds unimaginable with current technology. This could lead to breakthroughs in fields like cryptography, material science, and drug discovery. While still in its early stages, quantum computing has the potential to solve problems that are currently impossible for classical computers, opening up new possibilities for research and development.</p>
+        
+   </div>
+
+    
+    <%if(Posts){%>
+   <% for(let i=0;i<Posts.length;i++) {%>
+    <%let obj=Posts[i];%>
+    <div class="bloggg">
+        <img class="blog-img" src="images/tech<%= obj.imgid %>.jpg" alt="">
+        <h1><%= obj.Name %></h1>
+        <h4>-<%= obj.AuthorName %></h4>
+        <p><%= obj.content %></p>
+        <div class="buttons">
+        <form action="/edit/<%= obj.id %>" method="post">
+            <button class="btn" type="submit">Edit</button>
+        </form>
+        <form action="/delete/<%= obj.id %>" method="post">
+            <button class="btn" type="submit">Delete</button>
+        </form>
+    </div>
+    </div>
+<%}%>
+<%}%>
+</section>
+<%-include("partials/footer.ejs") %>
+</body>
+</html>

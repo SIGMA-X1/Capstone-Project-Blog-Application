@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css"> 
+    <title>Edit Blog Post</title>
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+     <hr>
+    <section class="edit section">
+        <form action="/editpost/<%= id %>" method="POST">
+            <div class="textgap">
+                <label for="blogname">BLOG-NAME</label>
+                <input class="blognameinput" type="text" name="blogName" placeholder="Enter blog name">
+            </div>
+            <div class="textgap">
+                <textarea class="bloginput" id="postContent" name="content" rows="14" cols="70" placeholder="Enter your post content here..."></textarea>
+            </div>
+            <button class="crbtn btn" type="submit">UPDATE</button>
+        </form>
+    </section>
+
+    <%- include("partials/footer.ejs") %>
+</body>
+</html>
+
+ 
+ 
+
+    
+</body>
+</html>
